@@ -23,14 +23,14 @@
 
 <!--	  Remember to change 3jsTemplate to your folder name!-->
 	  
-  <script src="../sarahnicita4/static/js/three.js"></script>
-	  <script src="../sarahnicita4/static/js/loaders/DDSLoader.js"></script>
-		<script src="../sarahnicita4/static/js/loaders/MTLLoader.js"></script>
-		<script src="../sarahnicita4/static/js/loaders/OBJMTLLoader.js"></script>
+  <script src="../sarahnicita2020.github.io/static/js/three.js"></script>
+	  <script src="../sarahnicita2020.github.io/static/js/loaders/DDSLoader.js"></script>
+		<script src="../sarahnicita2020.github.io/static/js/loaders/MTLLoader.js"></script>
+		<script src="../sarahnicita2020.github.io/static/js/loaders/OBJMTLLoader.js"></script>
 	
-  <script src="../sarahnicita4/static/js/StereoEffect.js"></script>
-  <script src="../sarahnicita4/static/js/DeviceOrientationControls.js"></script>
-  <script src="../sarahnicita4/static/js/OrbitControls.js"></script>
+  <script src="../sarahnicita2020.github.io/static/js/StereoEffect.js"></script>
+  <script src="../sarahnicita2020.github.io/static/js/DeviceOrientationControls.js"></script>
+  <script src="../sarahnicita2020.github.io/static/js/OrbitControls.js"></script>
 
   <script>
     var camera, scene, renderer, model;
@@ -98,7 +98,7 @@
     
       //the sky
       material = new THREE.MeshBasicMaterial({
-          map: THREE.ImageUtils.loadTexture("../sarahnicita4/food2.jpg"),
+          map: THREE.ImageUtils.loadTexture("../sarahnicita2020.github.io/food2.jpg"),
           side: THREE.DoubleSide
       });
       sky = new THREE.Mesh(new THREE.SphereGeometry(500, 60, 40 ), material);
@@ -122,7 +122,7 @@
 		THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
     
 			var loader = new THREE.OBJMTLLoader();
-				loader.load( '../sarahnicita4/model/mesh.obj', '../sarahnicita4/model/mesh.mtl', function ( object ) {
+				loader.load( '../sarahnicita2020.github.io/model/mesh.obj', '../sarahnicita2020.github.io/model/mesh.mtl', function ( object ) {
 					model = object;
 					//Use these to set the object's position
 					//object.position.y = 0;
